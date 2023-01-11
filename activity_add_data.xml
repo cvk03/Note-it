@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/back3"
+    tools:context=".Add_data_activity">
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:gravity="center_vertical"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:gravity="clip_horizontal"
+            android:hint="Title"
+            android:textColorHint="#454444"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:gravity="clip_horizontal"
+            android:hint="Description"
+            android:textColorHint="#454444"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lemon_yellow"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Save"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lemon_yellow"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Cancel"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
